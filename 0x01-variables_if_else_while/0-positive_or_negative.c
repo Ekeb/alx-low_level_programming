@@ -5,7 +5,8 @@
 /**
  * main - this program assigns a random number to variable n
  * each time it is executed.
- * Description: This will print the number stored in n and say if it's positive,
+ * Description: This will print the number
+ * stored in n and say if it's positive,
  * negative, or zero.
  * Return: 0
  */
