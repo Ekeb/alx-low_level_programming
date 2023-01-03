@@ -42,14 +42,14 @@ Tasks page_with_curl
 
 2. strchr
 
-	2-strchr.c: C function that returns a pointer to the first occurence of  
+	2-strchr.c: C function that returns a pointer to the first occurence of
 	the character c in the string s.
 	If the character is not found, the function returns NULL.
 
 3. strspn
-	
+
 	3-strspn.c: C function that returns the number of bytes in the intitial
-	 segment of memory area s which consist only of bytes from a subtring accept.
+	segment of memory area s which consist only of bytes from a subtring accept.
 
 4. strpbrk
 
