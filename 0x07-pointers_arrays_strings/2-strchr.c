@@ -5,20 +5,17 @@
  * @s: The string to be searched.
  * @c: The character to be located.
  *
- * Return: If c is found - a pointer to the first occurence
+ * Return: If c is found - a pointer to the first occurence.
  * If c is not found - NULL.
  */
 char *_strchr(char *s, char c)
 {
-	int a = 0, b;
+	int i = 0;
 
-	while (s[a])
-		a++;
-	for (b = 0; b < a; b++)
+	for (; i[s] >= '\0'; i++)
 	{
-		if (c == s[b])
-			s += b;
-				return (s);
+		if (s[i] == c)
+			return (&s[i]);
 	}
-	return ('\0');
+	return (0);
 }
