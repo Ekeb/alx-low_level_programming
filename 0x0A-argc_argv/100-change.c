@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 	printf("%d\n", change(atoi(argv[1])));
 	return (0);
 }
+
 /**
  * change - get change
  * @cents: amount of coins from main function
@@ -37,32 +38,29 @@ int change(int cents)
 	{
 		while (cents >= q)
 		{
-			while (cents >= q)
-			{
-				cents -= q;
-				coins++;
-			}
-			while (cents >= d)
-			{
-				cents -= d;
-				coins++;
-			}
-			while (cents >= n)
-			{
-				cents -= n;
-				coins++;
-			}
-			while (cents >= t)
-			{
-				cents -= t;
-				coins++;
-			}
-			while (cents >= p)
-			{
-				cents -= p;
-				coins++;
-			}
+			cents -= q;
+			coins++;
 		}
-		return (coins);
+		while (cents >= d)
+		{
+			cents -= d;
+			coins++;
+		}
+		while (cents >= n)
+		{
+			cents -= n;
+			coins++;
+		}
+		while (cents >= t)
+		{
+			cents -= t;
+			coins++;
+		}
+		while (cents >= p)
+		{
+			cents -= p;
+			coins++;
+		}
 	}
+	return (coins);
 }
