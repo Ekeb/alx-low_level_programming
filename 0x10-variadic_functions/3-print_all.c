@@ -1,7 +1,6 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stdarg.h>
-
+#include <stdarg.>
 /**
  * print_all - Entry Point
  * c = char, i = int, f = float, s = char * (if null print (nil))
@@ -16,12 +15,13 @@ void print_all(const char * const format, ...)
 	char *str;
 
 	va_start(valist, format);
+
 	while (format && format[i])
-		i++;
+		++;
 
 	while (format && format[n])
 	{
-		if (n  == (i - 1)
+		if (n  == (i - 1))
 		{
 			sep = "";
 		}
@@ -35,10 +35,11 @@ void print_all(const char * const format, ...)
 			break;
 		case 'f':
 			printf("%f%s", va_arg(valist, double), sep);
+			break;
 		case 's':
 			str = va_arg(valist, char *);
 			if (str == NULL)
-			str = "(nil)";
+				str = "(nil)";
 			printf("%s%s", str, sep);
 			break;
 		}
