@@ -9,7 +9,7 @@
  * if div or mod 0, return Error & exit 100
  * run calc, input one, operator, input two = pointer res to get_op
  * @argc: arguments
- * @argv: double pointer to arguments
+ * @argv: double pointer to argumen
  * Return: 0
  */
 int main(int argc, char *argv[])
@@ -23,7 +23,6 @@ int main(int argc, char *argv[])
 		printf("Error\n")
 		exit(98);
 	}
-
 	one = atoi(argv[1]);
 	two = atoi(argv[3]);
 	get_op = argv[2];
@@ -34,16 +33,16 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*get_op == '/' || *get_op == '%') && (*argv[3] == '0'))
+	if ((*get_op == '/' || *get_op == '%') && (*argv[3] == '0')
 	{
-		printf("Error\n");
+		printf("Error\n")
 		exit(100);
 	}
-
 	res = get_op_func(get_op);
 	ans = res(one, two);
 
 	printf("%d\n", ans);
 	return (0);
 }
+
 
